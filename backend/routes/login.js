@@ -37,6 +37,12 @@ router.post('/', async function (req, res) {
 
     return res.json({ token, user: safeUser });
   } catch (error) {
+    console.error('Login failed', {
+      code: error.code,
+      errno: error.errno,
+      sqlState: error.sqlState,
+      message: error.message
+    });
     return res.status(500).json({ message: 'Error interno del servidor' });
   }
 });

@@ -17,7 +17,7 @@ const poolConfig = {
 
 if (sslEnabled) {
   poolConfig.ssl = {
-    rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED !== 'false'
+    rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true'
   };
 }
 
