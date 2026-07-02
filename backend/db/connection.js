@@ -16,7 +16,9 @@ const poolConfig = {
 };
 
 if (sslEnabled) {
-  poolConfig.ssl = { rejectUnauthorized: true };
+  poolConfig.ssl = {
+    rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED !== 'false'
+  };
 }
 
 const pool = mysql.createPool(poolConfig);
