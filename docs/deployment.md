@@ -68,6 +68,12 @@ VITE_API_URL=https://<tu-backend-render>.onrender.com/api
 
 5. Deploy.
 
+Si usas Vercel Services para desplegar frontend y backend en un solo proyecto, usa esta variable en Vercel:
+
+```env
+VITE_API_URL=/api
+```
+
 ## 4. Verificación
 
 1. Abrir la URL de Vercel.
