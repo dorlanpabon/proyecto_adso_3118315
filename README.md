@@ -60,6 +60,9 @@ Backend:
 npm run dev
 npm run migrate
 npm run seed:admin
+npm test
+npm run test:unit
+npm run test:integration
 npm start
 ```
 
@@ -68,6 +71,9 @@ Frontend:
 ```bash
 npm run dev
 npm run lint
+npm test
+npm run test:unit
+npm run test:integration
 npm run build
 npm run preview
 ```
@@ -99,4 +105,3 @@ VITE_API_URL=http://localhost:3118/api
 ## Despliegue
 
 La guía paso a paso está en [docs/deployment.md](docs/deployment.md).
-
